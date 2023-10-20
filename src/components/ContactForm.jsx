@@ -20,6 +20,7 @@ export class ContactForm extends Component {
       number: this.state.number,
     };
     this.props.addContact(contactData);
+    this.setState({ name: '', number: '' });
   };
 
   render() {
